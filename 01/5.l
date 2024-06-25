@@ -1,5 +1,14 @@
 %{
 #include <stdio.h>
+
+/*
+    accept the following inputs:
+        word (any combination of at least 2 letters)
+        character (any single letter)
+        string (any combination of letters and numbers)
+        positive & negative numbers, where numbers are:
+            integer, real (float), exponential (3.1e+8)
+*/
 %}
 
 %%
