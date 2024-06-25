@@ -1,5 +1,10 @@
 %{
 #include <stdio.h>
+
+/*
+    accept any words within the language expressed by the expression
+        (a * (a + b)^{*} * a * a) + (b * (a + b)^{*} * b) + ((a + b)(a + b))^{+}
+*/
 %}
 
 %%
