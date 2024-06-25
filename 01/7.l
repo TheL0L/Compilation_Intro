@@ -1,6 +1,11 @@
 %{
 #include <stdio.h>
 
+/*
+    accept any words within the language expressed by the following CFG
+        S -> 0S1 | 0S11 | 0S111 | 1
+*/
+
 void check(char* string, size_t length)
 {
     size_t zeros = 0, ones = 0;
