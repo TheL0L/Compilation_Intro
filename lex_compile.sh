@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Define color codes
+# Define color codes for output messages
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 CYAN='\033[0;36m'
@@ -24,11 +24,11 @@ fi
 DIR=$(dirname "$LEX_FILE")
 BASE_NAME=$(basename "$LEX_FILE" .l)
 
-# Step 3: Parse the lex file using lex
+# Parse the lex file using lex
 OUTPUT_C_FILE="$DIR/$BASE_NAME.c"
 lex -o "$OUTPUT_C_FILE" "$LEX_FILE"
 
-# Step 4: Compile the C source file using gcc
+# Compile the C source file using gcc
 EXECUTABLE="$DIR/${BASE_NAME}_exec"
 gcc "$OUTPUT_C_FILE" -lfl -o "$EXECUTABLE"
 
@@ -40,5 +40,5 @@ else
     exit 1
 fi
 
-# Step 5: Clean up generated C file
+# Clean up the generated C file
 rm "$OUTPUT_C_FILE"
