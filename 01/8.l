@@ -1,5 +1,10 @@
 %{
 #include <stdio.h>
+
+/*
+    accept any word within the language
+        L = {σω | ω ∈ (Σ - {σ})* ; σ ∈ Σ ; Σ = {0, 1, 2, 3, 4, 5}}
+*/
 %}
 
 %%
