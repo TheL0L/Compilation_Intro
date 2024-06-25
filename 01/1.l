@@ -1,5 +1,7 @@
 %{
 #include <stdio.h>
+
+/* collapse redundant whitespaces, flip letter cases. */
 %}
 
 %%
