@@ -1,6 +1,11 @@
 %{
 #include <stdio.h>
 
+/*
+    accept any words within the language
+        L = {ω | ω = a^{i+1}b^{i}c^{j}ed^{3j+2} ; i,j >= 0}
+*/
+
 void check(char* string, size_t length)
 {
     size_t a = 0;
