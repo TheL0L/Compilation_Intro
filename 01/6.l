@@ -1,5 +1,7 @@
 %{
 #include <stdio.h>
+
+/* convert lower case letters ASCII codes to upper case equivalents. */
 %}
 
 %%
